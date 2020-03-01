@@ -12,7 +12,7 @@ dl, ol, ul, * {
 /*Header*/
 .header-top {
     background-color: #C8A35F;
-    height: 45px;
+    padding: 5px 0;
 }
 
 .header-top__wrap {
@@ -25,13 +25,13 @@ dl, ol, ul, * {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 45px;
 }
 
 .header-top__item-link {
     color: white;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .header-top__item > .header-top__item-link {
@@ -45,7 +45,7 @@ dl, ol, ul, * {
 }
 
 .header-top__item-lang {
-    width: 75px;
+    width: 110px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -354,6 +354,7 @@ dl, ol, ul, * {
 .footer-wrap__info-tel {
     color: white;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .footer-wrap__info-tel:hover {
@@ -367,4 +368,140 @@ dl, ol, ul, * {
 
 .footer-wrap__info-email:hover {
     color: #2F343A;
+}
+
+@media (max-width: 991px) {
+    .header-bottom__brand-item:last-child {
+        text-align: center;
+    }
+    .header-bottom__nav {
+        width: 70%;
+    }
+    .header-bottom__brand {
+        width: 40%;
+    }
+    .services-wrap__item-img {
+        width: 100%;
+    }
+    .bcg-truck__wrap {
+        width: 720px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-bottom__nav {
+        width: 50%;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .header-bottom__nav-item {
+        width: 50%;
+        padding: 5px 0;
+    }
+    .all-services__table-item {
+        width: 100%;
+    }
+    .all-services__wrap-table-row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .footer {
+        height: auto;
+    }
+    .footer-wrap {
+        height: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+    }
+    .footer-wrap > * {
+        margin: 15px 0;
+    }
+    .services-wrap__bg {
+        width: 300px;
+    }
+    .bcg-truck__wrap {
+        width: 540px;
+    }
+}
+
+@media (max-width: 575px) {
+    .header-bottom {
+        height: auto;
+    }
+    .header-bottom__wrap {
+        height: auto;
+    }
+    .header-bottom__wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .header-bottom__brand {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .header-bottom__brand-item:last-child {
+        margin-left: 0;
+        border-left: none;
+        padding-left: 0;
+    }
+    .header-bottom__brand > * {
+        margin: 10px 0;
+    }
+    .header-bottom__nav {
+        width: 100%;
+    }
+    .bcg-truck__wrap {
+        width: 90%;
+    }
+    .bcg-truck__title {
+        font-size: 40px;
+    }
+    .services {
+        height: auto;
+    }
+    .services-wrap {
+        height: auto;
+    }
+    .services-wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 120px 0;
+        -webkit-box-align: unset;
+            -ms-flex-align: unset;
+                align-items: unset;
+    }
+    .services-wrap__bg {
+        display: none;
+    }
+    .services-wrap__item {
+        width: 100%;
+    }
+    .services-wrap__item-img {
+        margin-top: 60px;
+    }
+    .services-wrap__title {
+        font-size: 35px;
+    }
+    .header-top__item-link {
+        font-size: 15px;
+    }
+    .header-top__item-lang {
+        width: 90px;
+    }
 }
